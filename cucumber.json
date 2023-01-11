@@ -1,0 +1,26 @@
+{
+	"default": {
+	  "requireModule": [
+		"ts-node/register"
+	  ],
+	  "require": [
+		"features/**/*.shell.ts"
+	  ],
+	  "format": [
+		"summary"
+	  ],
+	  "publishQuiet": true
+	},
+	"core": {
+		"requireModule": [
+		  "ts-node/register"
+		],
+		"require": [
+		  "features/**/*.core.ts"
+		],
+		"format": [
+		  "summary"
+		],
+		"publishQuiet": true
+	  }
+  }
