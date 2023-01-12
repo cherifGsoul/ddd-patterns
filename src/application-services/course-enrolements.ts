@@ -3,7 +3,7 @@ import Course from "../domain/course";
 import Courses from "../domain/courses";
 import Learner from "../domain/learner";
 
-export default class CourseEnrolment {
+export default class CourseEnrolments {
 	#courses: Courses;
 
 	constructor(courses: Courses) {

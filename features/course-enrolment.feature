@@ -13,15 +13,15 @@ Feature: Scheduling a training course
     Given "BDD for Beginners" was proposed with a class size of 2 to 3 people
 
   Scenario: Course does not get enough enrolments to be viable
-    When only Alice enrols on this course
+    When only "Alice" enrols on this course
     Then this course will not be viable
 
   Scenario: Course gets enough enrolments to be viable
-    Given Alice has already enrolled on this course
-    When Bob enrols on this course
+    Given "Alice" has already enrolled on this course
+    When "Bob" enrols on this course
     Then this course will be viable
 
   Scenario: Enrolments are stopped when class size is reached
-    Given Alice, Bob and Charlie have already enrolled on this course
-    When Derek tries to enrol on this course
+    Given "Alice", "Bob" and "Charlie" have already enrolled on this course
+    When "Derek" tries to enrol on this course
     Then he should not be able to enrol
