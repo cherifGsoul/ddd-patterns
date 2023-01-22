@@ -11,7 +11,7 @@ export default class CourseEnrolments {
 	}
 
 	public async propose(title: string, min: number, max: number): Promise<void> {
-		const course = Course.propose(title, ClassSize.between(min, max))
+		const course = Course.propose(this.#courses.nextIdentity(), title, ClassSize.between(min, max))
 		await this.#courses.persist(course);
 	}
 
